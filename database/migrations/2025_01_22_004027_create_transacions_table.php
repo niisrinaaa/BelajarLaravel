@@ -20,12 +20,11 @@ return new class extends Migration
             $table->string('Name');
             $table->text('Address');
             $table->text('Phone');
-            $table->date('date');
+            $table->date('Date');
             $table->time('Starttime');
             $table->time('Endtime');
-            $table->integer('Duration');
-            $table->integer('Costume');
-            $table->integer('Shoes');
+            $table->boolean('Costume');
+            $table->boolean('Shoes');
             $table->integer('Total');
             $table->integer('Grandtotal');
             $table->integer('Paytotal');            
