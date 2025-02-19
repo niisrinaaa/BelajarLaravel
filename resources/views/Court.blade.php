@@ -11,17 +11,26 @@
         <td>id</td>
         <td>Court Tipe</td>
         <td>Court Name</td>
+        <td>Price</td>
         <td>action</td>
         </tr>
+        @forelse ($courts as $court)
         <tr>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>{{ $loop -> iteration }}</td>
+          <td>{{$court -> courttype_id}}</td>
+          {{-- <td>{{$court -> type -> Name}}</td> --}}
+          <td>{{$court -> Name}}</td>
+          <td{{$court -> Price}}</td>
           <td>
             <a class="btn btn-sm btn-warning" href="">Edit</a>
             <a class="btn btn-sm btn-danger" href="">Hapus</a>
           </td>
-        </tr>
+        </tr>  
+        @empty
+          <div class="alert alert-danger">
+          Belum ada  
+          </div>  
+        @endforelse
         </thead>
   </table>
 </div>

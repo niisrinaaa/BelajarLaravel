@@ -21,10 +21,10 @@
             <hr>
             <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item">
-                    <a href="home" class="nav-link text-white active"><i class="bi bi-bank2 me-2"></i>  HOME</a>
+                    <a href="court" class="nav-link text-white active"><i class="bi bi-bank2 me-2"></i>  HOME</a>
                 </li>
                 <li class="nav-item"></li>
-                    <a href="project" class="nav-link text-white"><i class="bi bi-toggles2 me-2"></i>  MASTER PROJECT</a>
+                    <a href="court-type" class="nav-link text-white"><i class="bi bi-toggles2 me-2"></i>  MASTER PROJECT</a>
                 </li>
                 <li class="nav-item"></li>
                     <a href="service" class="nav-link text-white"><i class="bi bi-ui-radios me-2"></i>  MASTER SERVICE</a>

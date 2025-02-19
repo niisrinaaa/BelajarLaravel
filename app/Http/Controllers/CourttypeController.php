@@ -11,9 +11,11 @@ class CourttypeController extends Controller
      */
     public function index()
     {
-        // $type = Courttype::all();
+        $types = Courttype::all();
         // return $type;
-        return view('Courttype');
+        // return view('Courttype');
+        return view('courttype', compact('types'));
+        
     }
 
     /**

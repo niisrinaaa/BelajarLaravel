@@ -7,5 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class court extends Model
 {
-    use HasFactory;
+    // use HasFactory;
+    public function type(){
+        return $this->belongsTo(courttype::class);
+    }
 }

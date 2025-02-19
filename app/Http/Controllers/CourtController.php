@@ -14,8 +14,8 @@ class CourtController extends Controller
         $courts = Court::all();
         // return $courts;
         // dd($courts);
-        
-        return view('Court');
+
+        return view('Court', compact('courts'));
         
     }
 
