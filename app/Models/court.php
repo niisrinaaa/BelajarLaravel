@@ -9,6 +9,6 @@ class court extends Model
 {
     // use HasFactory;
     public function type(){
-        return $this->belongsTo(courttype::class);
+        return $this->belongsTo(courttype::class, 'courttype_id');
     }
 }

@@ -9,6 +9,7 @@
     <thead>
       <tr>
         <td>id</td>
+        {{-- <td>court id</td> --}}
         <td>Court Tipe</td>
         <td>Court Name</td>
         <td>Price</td>
@@ -17,10 +18,10 @@
         @forelse ($courts as $court)
         <tr>
           <td>{{ $loop -> iteration }}</td>
-          <td>{{$court -> courttype_id}}</td>
-          {{-- <td>{{$court -> type -> Name}}</td> --}}
+          {{-- <td>{{$court -> courttype_id}}</td> --}}
+          <td>{{$court -> type -> Name}}</td>
           <td>{{$court -> Name}}</td>
-          <td{{$court -> Price}}</td>
+          <td>{{$court -> Price}}</td>
           <td>
             <a class="btn btn-sm btn-warning" href="">Edit</a>
             <a class="btn btn-sm btn-danger" href="">Hapus</a>
