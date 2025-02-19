@@ -19,7 +19,7 @@ class CourtSeeder extends Seeder
         $faker = Faker::create();
         for ($i=1; $i <=5 ; $i++) { 
             DB::table('courts')->insert([
-                'Court_type_id' => $faker->numberBetween(1, 2),
+                'Courttype_id' => $faker->numberBetween(1, 2),
                 'Name' => 'Lapangan'.$i,
                 'Price' => $faker->numberBetween(10000, 1000000),
             ]);

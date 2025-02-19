@@ -1,7 +1,7 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\CourttypeController;
+use App\Http\Controllers\CourtController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,18 +13,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-route::get('/home', function() {
-    return view('home');
-});
+// route::get('/home', function() {
+//     return view('home');
+// });
 
-route::get('/project', function() {
-    return view('project');
-});
+// route::get('/project', function() {
+//     return view('project');
+// });
 
-route::get('/service', function() {
-    return view('service');
-});
+// route::get('/service', function() {
+//     return view('service');
+// });
+
+Route::get('/court-type', [CourttypeController::class, 'index']);
+Route::post('/court-type', [CourttypeController::class, 'store']);
+
+Route::resource('court', CourtController::class);

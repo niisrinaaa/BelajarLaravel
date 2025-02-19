@@ -16,7 +16,7 @@ class CourttypeSeeder extends Seeder
     public function run(): void
     {
         for ($i=1; $i <=2 ; $i++) { 
-            DB::table('court_types')->insert([
+            DB::table('courttypes')->insert([
                 'Name' => 'Tipe'.$i
             ]);
         }
